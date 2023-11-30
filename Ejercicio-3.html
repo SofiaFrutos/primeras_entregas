@@ -6,44 +6,54 @@
     <title>Entrega 3</title>
   </head>
   <body>
-    <h1>Formulario de registro</h1>
-    <nav>
+    <header>
+      <h1>Formulario de registro</h1>
+    </header>
+    <main>
       <form>
-        <label for="nombre">Nombre</label>
-        <input id="nombre" type="text" required />
+        <!-- Con los formularios, debemos colocar cada elemento en un div,  suplantando los section ya que se encuentran dentro de una "caja" -->
+        <div>
+          <label for="nombre">Nombre</label>
+          <input id="nombre" type="text" required />
+        </div>
         <br />
+        <div>
+          <label for="apellido">Apellido</label>
+          <input id="apellido" type="text" required />
+        </div>
         <br />
-        <label for="apellido">Apellido</label>
-        <input id="apellido" type="text" required />
+        <div>
+          Modalidad de cursada:
+          <input id="ondemand" type="radio" name="modalidad" required />
+          <label for="ondemand">On-Demand</label>
+          <input id="vivo" type="radio" name="modalidad" required />
+          <label for="vivo">En Vivo</label>
+        </div>
         <br />
+        <div>
+          <label for="email">Correo</label>
+          <input id="email" type="email" required />
+        </div>
         <br />
-        Modalidad de cursada:
-        <input id="circulo" type="radio" name="modalidad" required />
-        <label for="circulo">On-Demand</label>
-        <input id="circulo" type="radio" name="modalidad" required />
-        <label for="circulo">En Vivo</label>
+        <div>
+          <input type="checkbox" id="info" />
+          <label for="info"
+            >Deseo recibir información sobre nuevos posteos en la plataforma
+            Nucba</label
+          >
+        </div>
         <br />
+        <div>
+          <input type="checkbox" id="terminos" required />
+          <label for="terminos"
+            >Declaro que leí los términos y condiciones y estoy listo para
+            convertirme en desarrollador web Full stack</label
+          >
+        </div>
         <br />
-        <label for="email">Correo</label>
-        <input id="email" type="email" required />
-        <br />
-        <br />
-        <input type="checkbox" id="checkbox" />
-        <label for="checkbox"
-          >Deseo recibir información sobre nuevos posteos en la plataforma
-          Nucba</label
-        >
-
-        <br />
-        <input type="checkbox" id="checkbox" required />
-        <label for="checkbox"
-          >Declaro que leí los términos y condiciones y estoy listo para
-          convertirme en desarrollador web Full stack</label
-        >
-        <br />
-        <br />
-        <button type="submit" value="enviar">Enviar</button>
+        <button type="submit">Enviar</button>
+        <input type="submit" value="Enviar" />
       </form>
-    </nav>
+    </main>
   </body>
 </html>
